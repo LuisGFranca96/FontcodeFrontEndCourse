@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>JQuery</title>
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.min.css">
+    <!-- Bootstrap -->
+    <!--<link href="css\bootstrap.min.css" rel="stylesheet"> -->
+    <script src="bower_components\jquery\dist\jquery.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    -->
+    <style>
+            #block{
+                width: 100px;
+                height: 150px;
+                border: 2px solid #235ded;
+                background-color: #235ded;
+                color: white;
+                text-align: center;
+            }  #droppable{
+                width: 100px;
+                height: 150px;
+                border: 2px solid green;
+                background-color: #235ded;
+                color: white;
+                text-align: center;
+            }
+        
+            #container{
+                width: 600px;
+                height: 400px;
+                border: 2px solid #235ded;
+            }
+
+                .ui-progressbar{
+                    position: relative;
+                }
+                .progressbar-label{
+                    position: absolute;
+                    left: 50%;
+                    top: 4px;
+                    font-weight : bold;
+                    text-shadow: 1px 1px 0 #fff;
+                }
+            
+        </style>
+    
+</head>
+<body>      <h1>ToolTip</h1>
+
+    <p>
+        There are various way to customize the animation of a tooltip
+    </p>
+    <p> Show Option<a id="show-option" ></a></p>
+    
+        <h1>Progressbar</h1>
+         <div id="tabs">
+             <ul>
+                 <li><a href="#tabs-1">Tab1</a></li>
+                 <li><a href="#tabs-2">Tab2</a></li>
+                 <li><a href="#tabs-3">Tab3</a></li>
+
+             </ul>
+             <div id="tabs-1">
+                <p>Text Tab 1.....</p>
+             </div>
+             <div id="tabs-2">
+                    <p>Text Tab2 .....</p>
+                 </div>
+                 <div id="tabs-3">
+                        <p>Text Tab3 .....</p>
+                     </div>
+
+         </div>
+    <h1>
+        Progressbar
+    </h1>
+    <div id="progressbar" ><div class="progressbar-label">Loading...</div></div>
+  
+ 
+ 
+      
+ 
+<script> 
+        $(function(){
+            $('#show-option').tooltip();
+            show:{
+                effect:"slideDown";
+                delay: 250
+            }
+
+            $('#hide-option').tooltip();
+            hide:{
+                effect:"slideDown";
+                delay: 250
+            }
+            
+        })
+
+
+       $(function () {
+          var tabs = $('#tabs').tabs();
+             tabs.find(".ui-tabs-nav").sortable({
+                axis:"x",
+                stop:function(){
+                    tabs.tabs("refresh");
+                }
+                    });
+             });
+    $(function(){
+        $('#progressbar').progressbar({
+            value:false,
+            change:function(){
+                $('.progressbar-label').text($('#progressbar').progressbar('value') + "%");
+            },
+            complete:function(){
+                $('.progressbar-label').text("Complete");
+            }
+        });
+        function progress(){
+            var val = $('#progressbar').progressbar("value") || 0;
+            $('#progressbar').progressbar("value",val +2);
+            if(val < 99){
+                setTimeout(progress,80);
+            }
+           
+        }
+
+        setTimeout(progress,2000);
+             
+    });
+
+
+</script>
+        </body>
+</html>
