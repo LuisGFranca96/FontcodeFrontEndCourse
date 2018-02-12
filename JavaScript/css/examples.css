@@ -1,0 +1,73 @@
+.column1{
+	-webkit-column-count: 4;
+	-moz-column-count: 4;
+	column-count: 4;
+	padding: 20px;
+	-webkit-column-gap: 10px;
+	-moz-column-gap: 10px;
+	column-gap: 10px;
+} 
+
+
+.column3{
+		-webkit-column-count: 4;
+	-moz-column-count: 4;
+	column-count: 4;
+	padding: 20px;
+	-webkit-column-gap: 20px;
+	-moz-column-gap: 20px;
+	column-gap: 20px;
+	-webkit-column-rule-style: solid;
+	-moz-column-rule-style: solid;
+	column-rule-style: solid;
+
+	 -webkit-column-rule-width: 1px;
+	-moz-column-rule-width: 1px;
+	column-rule-width: 1px;
+
+	 -webkit-column-rule-color: 1px;
+	-moz-column-rule-color: 1px;
+	column-rule-color: 1px;
+}
+
+.column-title{
+	-webkit-column-span: all;
+	-moz-column-span: all;
+	column-span: all;
+}
+
+.resize1{
+	border: 2px solid;
+	padding: 20px;
+	width: 300;
+	resize: horizontal;
+	overflow: auto;
+
+}
+
+.resize2{
+	border: 2px solid;
+	padding: 20px;
+	width: 300;
+	resize: horizontal;
+	overflow: scroll;
+	
+}
+
+.print{
+	display: none;
+
+}
+
+.screen{
+	display: none;	
+}
+
+@media screen and (max-width: 900px){
+	body{
+		background-color: red;
+	}
+	.screen{
+		display: block;
+	}
+}

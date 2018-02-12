@@ -1,0 +1,122 @@
+#background1{
+	
+width: 90%;
+height:125px;
+border: 5px solid black;
+padding: 35px;
+background-size: 92px,cover,cover;
+background-image: url(../water.jpg);
+background-origin: padding-box;
+background-repeat: no-repeat;
+display: inline-block;	
+}
+
+
+#p1{
+	background-color: rgba(255,0,0,0.3);
+}
+
+#p2{
+	background-color: rgba(0,255,0,0.3);
+}
+
+#p3{
+	background-color: rgba(0,0,0,255.3);
+}
+
+#p4{
+	background-color: hsl(120,100%,50%);
+}
+
+#p5{
+	background-color: hsl(30,100%,50%);
+}
+
+#p6{
+	background-color: hsl(50,100%,50%);
+}
+#p7{
+	background-color: hsla(120,100%,50%,0.3);
+}
+#p8{
+	background-color: hsla(200,100%,50%,0.3);
+}
+#p9{
+	background-color: hsla(180,100%,50%,0.3);
+} 
+
+
+/* GRADIENTE */
+
+
+#grad1 {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgb(51, 177, 251), #00FF7E); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgb(51, 177, 251), #00FF7E); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgb(51, 177, 251), #00FF7E); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(51, 177, 251), #00FF7E); /* Standard syntax */
+    height: 100px;
+}
+
+#grad2 {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, rgb(51, 177, 251), #00FF7E); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgb(51, 177, 251), #00FF7E); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgb(51, 177, 251), #00FF7E); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgb(51, 177, 251), #00FF7E); /* Standard syntax */
+    height: 100px;
+}
+
+#grad3 {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, rgb(51, 177, 251), #00FF7E); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, rgb(51, 177, 251), #00FF7E); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, rgb(51, 177, 251), #00FF7E); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, rgb(51, 177, 251), #00FF7E); /* Standard syntax */
+    height: 100px;
+}
+
+#grad4 {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(-90deg, rgb(51, 177, 251), #00FF7E); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-90deg, rgb(51, 177, 251), #00FF7E); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-90deg, rgb(51, 177, 251), #00FF7E); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-90deg, rgb(51, 177, 251), #00FF7E); /* Standard syntax */
+    height: 100px;
+}
+#grad5 {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgb(51, 177, 251), #00FF7E, green); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgb(51, 177, 251), #00FF7E, green); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgb(51, 177, 251), #00FF7E, green); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(51, 177, 251), #00FF7E, green); /* Standard syntax */
+    height: 100px;
+}
+#grad6 {
+    background: red; /* For browsers that do not support gradients */
+    /* For Safari 5.1 to 6.0 */
+    background: -webkit-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet);
+    /* For Opera 11.1 to 12.0 */
+    background: -o-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet);
+    /* For Fx 3.6 to 15 */
+    background: -moz-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet);
+    /* Standard syntax */
+    background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    height: 100px;
+}
+#grad7 {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left,rgba(255,0,0,0),rgba(255,0,0,1)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(right,rgba(255,0,0,0),rgba(255,0,0,1)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(right,rgba(255,0,0,0),rgba(255,0,0,1)); /*Fx 3.6-15*/
+    background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); /*Standard*/
+    height: 100px;
+}
+#grad8 {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-radial-gradient(rgb(51, 177, 251), #00FF7E, green); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(rgb(51, 177, 251), #00FF7E, green); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(rgb(51, 177, 251), #00FF7E, green); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(rgb(51, 177, 251), #00FF7E, green); /* Standard syntax */
+    height: 100px;
+}

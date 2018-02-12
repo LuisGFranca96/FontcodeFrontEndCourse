@@ -1,0 +1,52 @@
+	*{
+		magin: 0;
+		paddding: 0;
+		list-style: none;
+		vertical-align: baseline;
+		box-sizing: border-box;
+			}
+			#section1{
+				border:1px solid #000000;	
+			}
+			.violetH{
+				color:red;
+			}
+			
+			nav ul li{
+				display: inline-block;
+				 
+			`}
+			nav ul li a {
+				background-color: red;
+				border: 3px solid darkred;	
+				margin:  10px; 
+				padding: 10px;
+				display: inline-block;
+			}
+			
+			nav ul{
+				padding: 0;
+			}
+			
+			form{
+				border: dashed 1px;
+				width: 40%;
+				
+			}
+			
+			input{
+				display:block;
+				width:30%;
+				margin: 0 0 10px 0;
+				border: 1px solid #aaa;
+			}
+			.btn {
+				background-color: red;
+				border: 3px solid darkred;	
+				margin:  10px; 
+				padding: 10px;
+				display: inline-block;
+			}
+			.btnred:hover{
+				background-color:darkred;
+			}
