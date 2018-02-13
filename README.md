@@ -1,3 +1,2 @@
 # FontcodeFrontEndCourse
-C√≥digo Fonte de todas as aulas de FrontEnd feitas na DouraSoft, algumas est√£o com arquivos incompletos porque eu inocentemente n√£o achei 
-que o Paulo iria querer checa-las, algumas coisas foram perdidas porque os arquivos foram sobreescritos.
+CÛdigos Fonte mÛdulos school of net.  
